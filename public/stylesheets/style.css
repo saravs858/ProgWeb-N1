@@ -281,3 +281,87 @@ footer {
     padding: 2rem;
   }
 }
+
+/* Estilos para Provas ENEM */
+.provas-enem-container {
+  max-width: 1200px;
+}
+
+.card {
+  transition: all 0.3s ease;
+  border-radius: 10px !important;
+  overflow: hidden;
+  background-color: var(--branco-neve);
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.btn-enem-prova {
+  background-color: var(--verde);
+  color: white !important;
+  border: none;
+}
+
+.btn-enem-prova:hover {
+  background-color: #6b8a6a;
+}
+
+.btn-enem-gabarito {
+  background-color: var(--dourado);
+  color: white !important;
+  border: none;
+}
+
+.btn-enem-gabarito:hover {
+  background-color: #9a7510;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .card-body {
+    padding: 1.5rem !important;
+  }
+}
+
+/* Cores personalizadas */
+.bg-verde {
+  background-color: #7F9473 !important;
+}
+
+.btn-enem {
+  background-color: #7F9473;
+  color: white !important;
+  border: none;
+  transition: all 0.3s;
+}
+
+.btn-enem:hover {
+  background-color: #6b7d62;
+  transform: translateY(-2px);
+}
+
+.btn-gabarito {
+  background-color: #B68810;
+  color: white !important;
+  border: none;
+  transition: all 0.3s;
+}
+
+.btn-gabarito:hover {
+  background-color: #9a7510;
+  transform: translateY(-2px);
+}
+
+/* Efeitos dos cards */
+.card {
+  transition: all 0.3s;
+  border-radius: 10px !important;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
