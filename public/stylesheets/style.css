@@ -101,35 +101,77 @@ footer {
   transform: translateY(-2px);
 }  
 
-/* Hero Section */
+/* Hero Section - Versão Corrigida */
 .hero {
-  background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), 
-              url('/images/hero-bg.jpg');
-  background-size: cover;
-  padding: 4rem 2rem;
-  border-radius: 8px;
-  margin-bottom: 3rem;
+  background-color: var(--branco-neve);
+  padding: 4rem 0;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .hero-content {
-  max-width: 600px;
+  flex: 1;
+  min-width: 50%;
 }
-   
+
+.hero-image {
+  flex: 1;
+  min-width: 45%;
+}
+
+.hero-image img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
 .hero h2 {
   color: var(--marrom);
   font-size: 2.2rem;
   margin-bottom: 1rem;
+  line-height: 1.2;
 }
 
 .hero p {
   color: var(--marrom);
   font-size: 1.1rem;
   margin-bottom: 2rem;
+  line-height: 1.6;
 }
 
 .hero-buttons {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-green {
+  background-color: var(--verde) !important;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .hero-content, .hero-image {
+    min-width: 100%;
+  }
+  
+  .hero-image img {
+    max-height: 300px;
+  }
 }
 
 /* Destaques */
@@ -169,4 +211,73 @@ footer {
 
 .destaque-card p {
   color: var(--marrom);
+}
+
+/* Login Page Styles */
+.login-container {
+  min-height: 100vh;
+  background-color: var(--branco-neve);
+}
+
+.login-illustration {
+  position: relative;
+  height: 100vh;
+  background-color: var(--marrom);
+}
+
+.login-illustration img {
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+.illustration-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 3rem;
+  color: white;
+  background: linear-gradient(transparent, rgba(0,0,0,0.7));
+}
+
+.login-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  padding: 3rem;
+  background-color: var(--branco);
+}
+
+.btn-gold {
+  background-color: var(--dourado);
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn-gold:hover {
+  background-color: #9a7510;
+  color: white;
+}
+
+/* Validação */
+.was-validated .form-control:invalid {
+  border-color: #dc3545;
+}
+
+.was-validated .form-control:valid {
+  border-color: #198754;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .login-illustration {
+    height: 300px;
+  }
+  
+  .login-form-container {
+    height: auto;
+    padding: 2rem;
+  }
 }

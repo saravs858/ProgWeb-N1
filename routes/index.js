@@ -31,4 +31,11 @@ router.get('/login', (req, res) => {
   res.render('login', { title: 'Login - Lumina Edu' });
 });
 
+router.get('/login', (req, res) => {
+  res.render('login', { 
+    title: 'Login - Lumina Edu',
+    layout: 'layout-login' // Opcional: crie um layout diferente para login
+  });
+});
+
 module.exports = router;
