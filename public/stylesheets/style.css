@@ -17,7 +17,6 @@ body {
   background-color: var(--bege);
 }
 
-/* Cabeçalho branco como solicitado */
 header {
   background-color: var(--branco);
   padding: 1rem 2rem;
@@ -97,7 +96,7 @@ footer {
 }
 
 .btn:hover {
-  background-color: var(--marrom);
+  background-color: var(--bege);
   transform: translateY(-2px);
 }  
 
