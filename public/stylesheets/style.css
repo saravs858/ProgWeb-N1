@@ -364,3 +364,64 @@ footer {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
 }
+
+/* Estilos para o formulário de cadastro */
+.bg-verde {
+  background-color: var(--verde);
+}
+
+.text-verde {
+  color: var(--verde);
+}
+
+.btn-dourado {
+  background-color: var(--dourado);
+  color: white;
+  transition: all 0.3s;
+}
+
+.btn-dourado:hover {
+  background-color: #9a7510;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Validação */
+.is-invalid {
+  border-color: #dc3545;
+}
+
+.invalid-feedback {
+  color: #dc3545;
+  font-size: 0.875em;
+}
+/* Estilos para o formulário de cadastro */
+.bg-verde {
+  background-color: var(--verde);
+}
+
+.text-verde {
+  color: var(--verde);
+}
+
+.btn-dourado {
+  background-color: var(--dourado);
+  color: white;
+  transition: all 0.3s;
+}
+
+.btn-dourado:hover {
+  background-color: #9a7510;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Validação */
+.is-invalid {
+  border-color: #dc3545;
+}
+
+.invalid-feedback {
+  color: #dc3545;
+  font-size: 0.875em;
+}
